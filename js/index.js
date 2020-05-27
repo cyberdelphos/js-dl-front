@@ -68,8 +68,14 @@ function downloadFunction(callback) {
     .catch(errorHandler);
 }
 
-function genLink(anchor) {
+function genLink(anchor, windowUrl, objectUrl) {
   document.getElementById('response-container').appendChild(anchor);
+  anchor.addEventListener('click', () => {
+    setTimeout(() => {
+      document.getElementById('response-container').removeChild(anchor);
+      windowUrl.revokeObjectURL(objectUrl);
+    }, 0);
+  });
 }
 
 function intentDownloadLink(anchor, windowUrl, objectUrl) {
