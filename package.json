@@ -1,0 +1,24 @@
+{
+  "name": "js-dl-front",
+  "version": "1.0.0",
+  "description": "Sample project front-end for JWT downloas",
+  "main": "js/index.js",
+  "scripts": {
+    "start": "http-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyberdelphos/js-dl-front.git"
+  },
+  "author": "Cyberdelphos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyberdelphos/js-dl-front/issues"
+  },
+  "homepage": "https://github.com/cyberdelphos/js-dl-front#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}

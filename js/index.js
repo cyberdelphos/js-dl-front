@@ -48,7 +48,7 @@ function autoDownload() {
 function downloadFunction(callback) {
   const headers = new Headers();
   headers.append('Authorization', `Bearer ${usrToken}`);
-  fetch('http://localhost:3000/downloads/CV.pdf', { headers })
+  fetch('http://localhost:3000/downloads/wsu-js-cheat-sheet.pdf', { headers })
     .then(response => {
       if (!response.ok) {
         throw new Error('Error en la petición')
